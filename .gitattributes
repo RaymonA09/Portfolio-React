@@ -1,0 +1,5 @@
+# Exclude index.html from language statistics
+React-Portfolio/Portfolio/index.html linguist-detectable=false
+
+# Treat all JSX files in the src folder as JavaScript
+React-Portfolio/Portfolio/src/**/*.jsx linguist-language=JavaScript
