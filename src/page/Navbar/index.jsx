@@ -47,9 +47,6 @@ const MobileIcon = styled.div`
     display: none;
     @media screen and (max-width: 768px){
         display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
         transform: translate (-100%, 50%);
         font-size: 1.8rem;
         cursor: pointer;
@@ -100,7 +97,10 @@ const ButtonContainer = styled.div`
 `;
 
 
-const GithubButton = styled.button`
+const GithubButton = styled.a`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
     color: ${({ theme }) => theme.primary};
     border: 1.8px solid ${({ theme }) => theme.primary};
@@ -142,7 +142,7 @@ const MobileMenu = styled.div`
 `;
 
 
-const MobileMenuLinks = styled(LinkR)`
+const MobileMenuLinks = styled.a`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
@@ -150,7 +150,7 @@ const MobileMenuLinks = styled(LinkR)`
     transition: all 0.2 ease-in-out;
     &:hover {
         color: ${({ theme }) => theme.primary};
-        }
+        };
 `
 
 
@@ -185,21 +185,21 @@ const Navbar = () => {
             /> 
         </MobileIcon>
         <NavItems>
-            <NavLink href="">About</NavLink>
-            <NavLink href="">Skills</NavLink>
-            <NavLink href="">Projects</NavLink>
-            <NavLink href="">Contact</NavLink>
+            <NavLink href="#about">About</NavLink>
+            <NavLink href="#skills">Skills</NavLink>
+            <NavLink href="#projects">Projects</NavLink>
+            <NavLink href="#contact">Contact</NavLink>
         </NavItems>
 
         <ButtonContainer>
-          <GithubButton href="/" target="_blank">Github Profile</GithubButton>
+          <GithubButton href="https://github.com/RaymonA09" target="_blank">Github Profile</GithubButton>
         </ButtonContainer>
         </NavbarContainer>
         {open && (
                 <MobileMenu open={open}>
                     <MobileMenuLinks href="#about" onClick={() => setOpen(!open)}>About</MobileMenuLinks>
-                    <MobileMenuLinks href='#skills' onClick={() => setOpen(!open)}>Skills</MobileMenuLinks>
-                    <MobileMenuLinks href='#projects' onClick={() => setOpen(!open)}>Projects</MobileMenuLinks>
+                    <MobileMenuLinks href="#skills" onClick={() => setOpen(!open)}>Skills</MobileMenuLinks>
+                    <MobileMenuLinks href="#projects" onClick={() => setOpen(!open)}>Projects</MobileMenuLinks>
                     <MobileMenuLinks href="#contact" onClick={() => setOpen(!open)}>Contact</MobileMenuLinks>
                     <GithubButton 
                         style={{
@@ -208,7 +208,7 @@ const Navbar = () => {
                             color: 'white',
                             width: 'max-content'
                         }} 
-                        href="/" 
+                        href="https://github.com/RaymonA09" 
                         target="_blank"
                     >
                         Github Profile

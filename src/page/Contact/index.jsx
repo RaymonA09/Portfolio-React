@@ -11,7 +11,12 @@ const Container = styled.div`
     z-index: 1;
     align-items: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
-    padding-bottom: 100px
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    @media (max-width: 1024px){
+      padding-top: 80px;
+  }
 `;
 
 
@@ -137,7 +142,7 @@ const DetailsInfo = styled.div`
 
 `
 
-const DetailsIcon = styled.span`
+const DetailsIcon = styled.a`
     display: flex;
     align-items: center;
     margin-right: 8px;
@@ -182,7 +187,7 @@ const H1 = styled.h1`
 
 const Contact = () => {
   return (
-      <Container>
+      <Container id = "contact">
           <Wrapper>
               <Title>
                   Contact
@@ -200,9 +205,9 @@ const Contact = () => {
               </Details>
               <p>Connect with me :</p>
               <IconDisplay>
-                <DetailsIcon>{icons.facebook}</DetailsIcon>
-                <DetailsIcon>{icons.github}</DetailsIcon>
-                <DetailsIcon>{icons.linkedin}</DetailsIcon>
+                <DetailsIcon href={Bio.facebook} target="_blank" rel="noopener noreferrer">{icons.facebook}</DetailsIcon>
+                <DetailsIcon href={Bio.github} target="_blank" rel="noopener noreferrer">{icons.github}</DetailsIcon>
+                <DetailsIcon href={Bio.linkedin} target="_blank" rel="noopener noreferrer">{icons.linkedin}</DetailsIcon>
               </IconDisplay>
             </CardLeft>
 

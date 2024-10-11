@@ -10,14 +10,14 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding-bottom: 100px;
+  padding-top: 100px;
 
   @media (max-width: 1024px){
-    padding-bottom: 80px;
+    padding-top: 80px;
   }
 
     @media screen and (max-width: 960px) {
-    padding-bottom: 50px;
+    padding-top: 75px;
   } 
 
   @media screen and (max-width: 480px) {

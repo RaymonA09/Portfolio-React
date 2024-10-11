@@ -11,10 +11,10 @@ const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 100px 30px 0px 30px;
 
   @media screen and (max-width: 960px) {
-    padding: 40px 16px;
+    padding: 40px 16px 0px;
   } 
 
   @media screen and (max-width: 480px) {
@@ -303,11 +303,7 @@ const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
-
-
-
         <HeroInnerContainer>
-
           <HeroLeftContainer>
             <Title>
               Hi, I am <br />
@@ -326,7 +322,7 @@ const Hero = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="_blank">Check Resume</ResumeButton>
+            <ResumeButton href={Bio.resume} target="_blank" rel="noopener noreferrer">Check Resume</ResumeButton>
           </HeroLeftContainer>
 
           <HeroRightContainer>
