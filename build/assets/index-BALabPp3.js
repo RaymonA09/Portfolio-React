@@ -109,7 +109,7 @@ Error generating stack: `+i.message+`
 `,_g=Q.div`
     display: none;
     @media screen and (max-width: 768px){
-        display: block;np
+        display: block;
         transform: translate (-100%, 50%);
         font-size: 1.8rem;
         cursor: pointer;

@@ -10,7 +10,6 @@ import {
 
 
 const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +117,7 @@ const ProjectsInfo  = styled.div`
 const ProjectsTitle = styled.div`
   font-size: 20px;
   font-weight: 600;
-  color: rgb(177, 178, 179);
+  color: #ffd589;
 `;
 
 const ProjectsDate = styled.div`

@@ -236,13 +236,13 @@ const ResumeButton = styled.a`
   max-width: 300px;
   text-align: center;
   padding: 16px 0;
-  color: ${({ theme }) => theme.white};
+  color: ${({ theme }) => theme.black};
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+  background: linear-gradient(225deg, #f7bd6c 0%, #eac085 100%);
   box-shadow: 20px 20px 60px #1F2634, -20px -20px 60px #1F2634;
 
   &:hover {
@@ -267,7 +267,7 @@ const Img = styled.img`
   max-height: 380px;
   object-fit: cover;
   object-position: center;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 3px solid ${({ theme }) => theme.primary};
   z-index: 1; /* Ensure the image is above the HeroBg */
   
 

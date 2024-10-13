@@ -8,7 +8,7 @@ export const Bio = {
         "Front End Developer",
         "Programmer"
     ],
-    description: "I'm a recent Computer Engineering graduate with a strong passion for front-end development. I thrive in collaborative environments, where my attention to detail and adaptability shine. Eager to apply my knowledge in real-world projects, I am committed to continuous growth and contributing effectively to diverse teams.",
+    description: "A Computer Engineering graduate with a strong passion for front-end development. I thrive in collaborative environments, where my attention to detail and adaptability shine. Eager to apply my knowledge in real-world projects, committed to continuous growth and contributing effectively to diverse teams.",
     linkedin: "https://www.linkedin.com/in/ralph-aurelio/",
     github: "https://github.com/RaymonA09",
     facebook: "https://www.facebook.com/aurelioralph/",

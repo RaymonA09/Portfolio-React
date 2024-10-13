@@ -3,9 +3,10 @@ import {Link as LinkR} from 'react-router-dom';
 import styled, { useTheme } from "styled-components";
 import { DiCssdeck} from "react-icons/di";
 import { FaBars } from "react-icons/fa";
+import AurelioLogo from "../../images/AurelioLogo.jpg";
 
 const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
+    background-color: ${({theme}) => theme.bg};
     height: 80px;
     display: flex;
     align-items: center;
@@ -114,7 +115,7 @@ const GithubButton = styled.a`
     height: 70%;
     :hover {
         background-color: ${({theme}) => theme.primary};
-        color: ${({ theme }) => theme.white};
+        color: ${({ theme }) => theme.black};
     }
 
     @media screen and (max-width: 768px) {
@@ -152,13 +153,23 @@ const MobileMenuLinks = styled.a`
         color: ${({ theme }) => theme.primary};
         };
 `
-
-
 export const Span = styled.div`
     padding: 0 4px;
     font-weight: bold;
     font-size: 18px;
-`
+`;
+
+const Img = styled.img`
+    max-width: 75%;
+    min-width: 60%;
+
+    @media (max-width: 869px){
+        max-width:80%;
+    }
+    @media (max-width: 768px){
+        max-width: 40%;
+    }
+`;
 
 const Navbar = () => {
     const [open, setOpen] = React.useState(false);
@@ -176,7 +187,7 @@ const Navbar = () => {
                 marginBottom: "20;",
                 cursor: "pointer",
             }}>
-                <DiCssdeck size="3rem"/> <span>Portfolio</span>
+                <Img src={AurelioLogo} alt="Raymon" />
             </a>
         </NavLogo>
         <MobileIcon>

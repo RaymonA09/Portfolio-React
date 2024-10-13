@@ -7,6 +7,7 @@ import Skills from './page/Skills';
 import Projects from './page/Projects';
 import { BrowserRouter as Router } from "react-router-dom";
 import Contact from './page/Contact';
+import Footer from './page/Footer';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,6 +36,7 @@ function App() {
           <Projects />
           <Contact />
           </Wrapper>
+          <Footer />
           
         </Body>
       </Router>

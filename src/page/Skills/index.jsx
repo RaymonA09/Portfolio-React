@@ -81,11 +81,11 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   height: 100%;
-  background-color: rgba(17,25,40,0.83);
-  border: 1px solid rgba(255,255,255,0.125);
+  background-color: transparent;
+  border: 1px solid #fff4a5;
   border-radius: 16px;
   padding: 18px 36px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: #f7bd6c 0px 4px 16px;
 
   @media (max-width: 1024px){
     max-width: 400px;
@@ -128,9 +128,9 @@ const SkillItem = styled.div`
   gap: 8px;
   justify-content: center;
   font-size: 16px;
-  color: ${({ theme }) => theme.text_primary+80};
+  color: #ffd589;
   border-radius: 12px;
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  border: 2px solid  #fff4a5;
   padding: 12px 16px;
   font-weight: 400;
 

@@ -75,7 +75,8 @@ const CardLeft = styled.div`
   width: 100%;
   max-width: 500px;
   background-color: transparent;
-  border: 1px solid #854ce6;
+  border: 2px solid #ffea89;
+  border-right: 1px solid #ffea89;
   border-radius: 2.5rem 0px 0px  2.5rem;
   padding: 5rem 2.5rem;
   display: flex;
@@ -90,10 +91,11 @@ const CardLeft = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1.5rem 2rem;
+    border: 2px solid #ffea89;
+    border-bottom: 2px solid #ffea89;
     border-radius: 2.5rem 2.5rem  0px  0px;
     gap: 1px;
-  };
-
+  }
 `
 
 const CardRight = styled.div`
@@ -101,7 +103,8 @@ const CardRight = styled.div`
   width: 100%;
   max-width: 500px;
   background-color: ${({ theme }) => theme.card } ;
-  border: 1px solid #854ce6;
+  border: 2px solid rgb(133, 76, 230);
+  border-left: 0px;
   border-radius: 0px 2.5rem 2.5rem 0px;
   padding: 18px 36px;
 
@@ -109,9 +112,10 @@ const CardRight = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 0px 0px  2.5rem 2.5rem;
+    border: 2px solid rgb(133, 76, 230);
+    border-top: 0px;
   }
-
-`
+`;
 
 const Details = styled.div`
  display: flex;
@@ -140,7 +144,7 @@ const DetailsInfo = styled.div`
   font-size: 16px;
 }
 
-`
+`;
 
 const DetailsIcon = styled.a`
     display: flex;
@@ -166,11 +170,17 @@ const Label = styled.div`
 `;
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.primary};
+  font-weight: 500;
+  color: ${({ theme }) => theme.white};
+  border: 2px solid rgb(133, 76, 230);
   border-radius: 2.5rem;
   margin: 10px;
   margin-left: 20px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
+  :hover {
+    background-color: rgb(133, 76, 230);
+    color: ${({ theme }) => theme.black};
+  }
 `;
 
 const H1 = styled.h1`
@@ -197,7 +207,7 @@ const Contact = () => {
           
           <Card>
             <CardLeft>
-              <H1 className = "text-2xl font-medium">Get in touch with me</H1>
+              <H1 className = "text-2xl font-medium text-customYellow">Get in touch with me</H1>
               <Details>
                 <DetailsInfo><DetailsIcon>{icons.mail}</DetailsIcon> {Bio.email}</DetailsInfo>
                 <DetailsInfo><DetailsIcon>{icons.location}</DetailsIcon> {Bio.location}</DetailsInfo>
@@ -213,7 +223,7 @@ const Contact = () => {
 
 
             <CardRight>
-              <h1 className = "text-2xl mt-5 ml-5 font-bold">Contact Me</h1>
+              <h1 className = "text-2xl mt-5 ml-5 font-bold text-customViolet">Contact Me</h1>
 
 
             <Form>
@@ -221,7 +231,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="username"
-                className="rounded-xl border-solid border-white border h-11 w-full bg-transparent text-white px-2 mt-2"
+                className="rounded-xl border-solid border-customViolet border h-11 w-full bg-transparent text-white px-2 mt-2"
               />                
               <Label>Username</Label>
               </fieldset>
@@ -230,7 +240,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="username"
-                className="rounded-xl border-solid border-white border h-11 w-full bg-transparent text-white px-2 mt-2"
+                className="rounded-xl border-solid border-customViolet border h-11 w-full bg-transparent text-white px-2 mt-2"
               />                
               <Label>Email</Label>
               </fieldset>
@@ -239,7 +249,7 @@ const Contact = () => {
               <input
                 type="text"
                 id="username"
-                className="rounded-xl border-solid border-white border h-11 w-full bg-transparent text-white px-2 mt-2"
+                className="rounded-xl border-solid border-customViolet border h-11 w-full bg-transparent text-white px-2 mt-2"
               />                
               <Label>Phone</Label>
               </fieldset>
@@ -248,7 +258,7 @@ const Contact = () => {
               <textarea
                 type="text"
                 id="username"
-                className="rounded-xl border-solid border-white border min-h-40 max-h-48 w-full bg-transparent text-white px-2 mt-2 leading-9"
+                className="rounded-xl border-solid border-customViolet border min-h-40 max-h-48 w-full bg-transparent text-white px-2 mt-2 leading-9"
               />                
               <Label>Message</Label>
               </fieldset>
