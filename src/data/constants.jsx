@@ -13,9 +13,9 @@ export const Bio = {
     github: "https://github.com/RaymonA09",
     facebook: "https://www.facebook.com/aurelioralph/",
     email: "ralphaurelio1@gmail.com",
-    resume: "/Portfolio-React/AURELIO_CV.pdf",
-    location: "Cavite, Philippines",
-    number: "+63 927 897 0765"
+    resume: "/Portfolio-React/Aurelio-CV-New.pdf",
+    location: "Neustadt-Glewe, Germany",
+    number: "+49 177 2029446"
 };
 
 const withSize = (Icon, size = 30) => (
