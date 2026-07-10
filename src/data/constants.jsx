@@ -13,7 +13,7 @@ export const Bio = {
     github: "https://github.com/RaymonA09",
     facebook: "https://www.facebook.com/aurelioralph/",
     email: "ralphaurelio1@gmail.com",
-    resume: "/Portfolio-React/Aurelio-CV-New.pdf",
+    resume: "/Portfolio-React/Lebenslauf-Aurelio.pdf",
     location: "Neustadt-Glewe, Germany",
     number: "+49 177 2029446"
 };
